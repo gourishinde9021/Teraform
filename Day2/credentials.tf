@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "github" {
-  token = var.token
+#  token = var.token   Provide github token
 }
 
 resource "github_repository" "example" {
