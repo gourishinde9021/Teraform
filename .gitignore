@@ -4,3 +4,5 @@ Day3/.terraform
 terraform.tfstate
 terraform.tfstate.backup
 .terraform.lock.hcl
+Day4/.terraform
+Day5/.terraform
