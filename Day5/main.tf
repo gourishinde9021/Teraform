@@ -4,7 +4,7 @@ variable "cidr" {
 
 resource "aws_key_pair" "terraform_key" {
   key_name = "terraform_key"
-  public_key = file("~/.ssh/id_rsa") 
+  public_key = file("~/.ssh/id_rsa.pub")
 }
 
 resource "aws_vpc" "myvpc" {
@@ -92,7 +92,7 @@ resource "aws_instance" "server" {
         "sudo apt-get install -y python3-pip",
         "cd /home/ubuntu",
         "sudo pip3 install flask",
-        "sudo python3 app.py &",
+        "sudo nohup python3 app.py &",
      ]
   }
 }
