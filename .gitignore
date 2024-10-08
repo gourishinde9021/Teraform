@@ -10,3 +10,9 @@ Day6/.terraform
 Day7/.terraform
 Day8/scenario1/.terraform
 Day9/.terraform
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+*/*.tfstate
+*/*.tfstate.*
